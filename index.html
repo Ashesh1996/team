@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <link rel="icon" href="favicon.ico"><title>Plan & Team Members</title>
+    </head>
+    <body>
+        <nav>
+            <div class="header-length">
+                <a href="#" class="logo"><img src="logo.png" alt="HSL|Help Street Life"></a>
+                <i class="menu-toggle-btn fas fa-grip-lines"></i>
+                <div class="nav-menu">
+                    <a href="#"><i class="fas fa-home home"></i>Home</a>
+                    <a href="#" class="active"><i class="fas fa-users team"></i>Team</a>
+                    <a href="#"><i class="fab fa-blogger blog"></i>Blog</a>
+                    <a href="#"><i class="fas fa-user-plus involve"></i>Get Involve</a>
+                    <a href="#"><i class="fas fa-sign-in-alt sign"></i>Sign In</a>
+                </div>
+            </div>
+        </nav>
+        <div class="about-section"> 
+            <h2>Plan of Work</h2>
+            <p>This web application allows registered NGO to get information about the waste food of any organization/party/restaurants. Any NGO or other users can register in our web application to take part in the Mission- “Save Food Stop Wastage”.  When there will unused excess food in any party or restaurants or home, the registered users will post the details and based on their locations and food quantity, a notification will be send over the nearby registered NGO for picking the food such that no poor people stays hungry. We also do proper analysis regarding percentage of food wastage within an area, which not only aware people from food wastage, but provides the success rate feeding poor hungry people.</p>
+        </div>
+        <!-- <h2>Our Team</h2> -->
+        <div class="team-section">
+            <div class="container">
+                <div class="card">
+                    <div class="image">
+                        <img src="deborshi.jpg" alt="Picture Problem" class="imag">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>Debarshi Roy</h3>
+                            <p>Co-Founder and Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="sayari.jpg" alt="Picture problem" class="imag">
+                    </div>
+                    <div class="content">
+                        <div>
+                           <h3>Sayari Pal</h3>
+                           <p>Co-Founder and Finance Head</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="arpita.jpg" alt="Picture Problem" class="imag">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>Arpita Biswas</h3>
+                            <p>HR</p>
+                        </div>            
+                    </div>
+                </div>
+                <div class="card">    
+                    <div class="image">
+                        <img src="ashesh.jpg" alt="Picture problem" class="imag">
+                    </div>
+                    <div class="content">    
+                        <div>
+                           <h3>Ashesh Roy</h3>
+                           <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="sougata.jpeg" alt="Picture problem" class="imag">
+                    </div>
+                    <div class="content">
+                        <div>
+                        <h3>Sougata Das</h3>
+                        <p>Web developer</p></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(window).on('scroll', function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+        $(".menu-toggle-btn").click(function(){
+             $(this).toggleClass("fa-times");
+             $(".nav-menu").toggleClass("active");
+            })
+        </script>
+    </body>
+</html>
